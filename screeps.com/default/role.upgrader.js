@@ -13,15 +13,16 @@ var roleUpgrader = {
 	    }
 
 	    if(creep.memory.upgrading) {
-            if(creep.upgradeController(creep.room.controller) == ERR_NOT_IN_RANGE) {
-                creep.moveTo(creep.room.controller, {visualizePathStyle: {stroke: '#ffffff'}});
+	        var controllerlocation = Game.getObjectById ('5982fcf1b097071b4adbe708')
+            if(creep.upgradeController(controllerlocation) == ERR_NOT_IN_RANGE) {
+                creep.moveTo(controllerlocation, {visualizePathStyle: {stroke: '#ff66cc'}});
             }
         }
         else {
             //how to get energy from a different source (left)
             var sources = Game.getObjectById('5982fcf1b097071b4adbe707')
             if(creep.harvest(sources) == ERR_NOT_IN_RANGE) {
-            creep.moveTo(sources), {visualizePathStyle: {stroke: '#ffaa00'}};
+            creep.moveTo(sources), {visualizePathStyle: {stroke: '#ff66cc'}};
 
             }
         }
