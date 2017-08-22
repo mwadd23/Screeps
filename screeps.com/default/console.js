@@ -7,3 +7,22 @@ if(harvesters.length < 2) {
     console.log('Spawning new harvester: ' + newName);
 }
 
+//this pulls the creep names and their object
+    for (var key in Game.creeps){
+        console.log("Key: "+ key + "     " + "Value: " + Game.creeps[key])
+    }
+
+    //get the creep names and their ticks to live
+    for (var i in Game.creeps){
+        console.log("Name: "+ i + "     " + "Ticks to Live: " + Game.creeps[i].ticksToLive)
+    }
+
+    //get the role of the creep
+    for (var i in Game.creeps){
+        console.log("Name: "+ i + "     " + "Role: " + Game.creeps[i].memory.role)
+    }
+
+    //gets the creeps name, role and ticks to live
+    for (var i in Game.creeps){
+        console.log("Name: "+ i + "     " + "Role: " + Game.creeps[i].memory.role + "       " + "Ticks to Live: " + Game.creeps[i].ticksToLive)
+    }
