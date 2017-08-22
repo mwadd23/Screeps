@@ -26,3 +26,19 @@ if(harvesters.length < 2) {
     for (var i in Game.creeps){
         console.log("Name: "+ i + "     " + "Role: " + Game.creeps[i].memory.role + "       " + "Ticks to Live: " + Game.creeps[i].ticksToLive)
     }
+
+
+    //how to get energy from a different source (right)
+    var sources = Game.getObjectById('5982fcf1b097071b4adbe706')
+    if(creep.upgrader(sources) == ERR_NOT_IN_RANGE) {
+    creep.moveTo(sources), {visualizePathStyle: {stroke: '#ffaa00'}};
+
+    
+    //how to get energy from a different source (left)
+    var sources = Game.getObjectById('5982fcf1b097071b4adbe707')
+    if(creep.upgrader(sources) == ERR_NOT_IN_RANGE) {
+    creep.moveTo(sources), {visualizePathStyle: {stroke: '#ffaa00'}};
+
+
+    
+    
