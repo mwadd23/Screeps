@@ -148,6 +148,6 @@ if(harvesters.length < 2) {
     if(Creep.upgrader(sources) == ERR_NOT_IN_RANGE) {
     Creep.moveTo(sources), {visualizePathStyle: {stroke: '#ffaa00'}};
 
-
+//
     
     
