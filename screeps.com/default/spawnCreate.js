@@ -36,7 +36,7 @@ var spawnCreate = {
         //console.log('Upgraders: ' + harvesters.length);
       
         if(upgraders.length < 10) {
-            var newName = Game.spawns['Spawn1'].createCreep([WORK,WORK,CARRY,MOVE,MOVE], undefined, {role: 'upgrader'});
+            var newName = Game.spawns['Spawn1'].createCreep([WORK,CARRY,MOVE], undefined, {role: 'upgrader'});
             //console.log('Spawning new upgrader: ' + newName);
         }
 

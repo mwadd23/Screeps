@@ -22,7 +22,7 @@ var roleBuilder = {
 	    }
 	    else {
 			 //how to get energy from a different source
-			 var sources = Game.getObjectById('5982fcf1b097071b4adbe706')
+			 var sources = Game.getObjectById('5982fcc1b097071b4adbe0b3')
 			 if(creep.harvest(sources) == ERR_NOT_IN_RANGE) {
 			 creep.moveTo(sources), {visualizePathStyle: {stroke: '#66ff33'}};		
             }
